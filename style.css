@@ -1,0 +1,93 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(4, 69, 123);
+    background: linear-gradient(
+      130deg,
+      rgb(80, 128, 249) 0%,
+      rgb(125, 192, 233) 23%,
+      rgb(201, 223, 245) 100%
+    );
+    background-repeat: no-repeat;
+  }
+.weather-container{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    padding: 28px 32px ;
+    overflow: hidden;
+    border-radius: 18px;
+    transition: 0.6s ease-out;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    row-gap: 20px;
+    flex-direction:column;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #105279;
+}
+.search-bar{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-bar input{
+    color: #105279;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+    border-radius: 18px;
+}
+.search-bar input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    color: #105279;
+    text-transform: capitalize;
+}
+.search-bar button{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    color: #105279;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 16px;
+    transition: 0.4s ease;
+}
+.search-bar button:hover{
+    color:rgb(255, 255, 255);
+    background-color: #105279;
+}
+.search-bar >fa-magnifying-glass{
+    position: absolute;
+    color: #105279;
+    font-size: 20px;
+}
+.myIcon{
+    width: 50px;
+    margin-left: 30px;
+}
+.time{
+    font-size: 30px;
+    color:#105279;
+}
+.errorimg{
+    margin-left: 30px;
+    margin-top: 30px;
+}
